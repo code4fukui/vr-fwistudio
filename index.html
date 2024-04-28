@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>XR山座熊川</title>
+<script type="module">
+import * as eg from "https://js.sabae.cc/egvr.js";
+
+eg.text("CyberFriday in FWI Studio", 0, 1.8, -1.5, 4, "#000");
+
+const bgurl = "./R0030068.JPG";
+const bg = eg.sky(bgurl);
+let y = -80;
+bg.setAttribute("rotation", { x: 0, y, z: 0 });
+
+let t = 0;
+setInterval(() => {
+  bg.setAttribute("rotation", { x: 0, y, z: 0 });
+  y += Math.cos(t / 200);
+  t++;
+}, 1000 / 60);
+
+/*
+const defbg = true;
+bg.setAttribute("visible", defbg);
+
+//setInterval(() => console.log(eg.scene.is("ar-mode")), 1000);
+
+eg.scene.addEventListener("enter-vr", function () {
+  if (eg.scene.is("ar-mode")) {
+    console.log("Entered AR mode");
+		bg.setAttribute("visible", false);
+  } else {
+    console.log("Entered VR mode");
+		bg.setAttribute("visible", true);
+  }
+});
+eg.scene.addEventListener("exit-vr", function () {
+  console.log("Exited VR/AR mode");
+	bg.setAttribute("visible", defbg);
+});
+
+*/
+
+</script>
