@@ -1,17 +1,25 @@
-# VR FWI Studio
-日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+# vr-fwistudio
 
-VR FWI Studio is a web-based virtual reality (VR) application that allows users to view 360-degree images.
+VR FWI Studio
 
-## Demo
-The demo is available at https://code4fukui.github.io/vr-fwistudio/
+**Live demo**: https://code4fukui.github.io/vr-fwistudio/
 
-## Features
-- Displays 360-degree images in a VR environment
-- Supports rotation of the background image
+## Technology Stack
 
-## Usage
-To run the application, simply open the `index.html` file in a web browser that supports WebVR.
+**Browser modules (ES imports):**
+
+- [`egvr.js`](https://js.sabae.cc/egvr.js)
+
+
+## Installation & Setup
+
+No build step required. Clone the repository and open `index.html` in a browser,
+or visit the live demo at https://code4fukui.github.io/vr-fwistudio/
+
+## Contributing
+
+Contributions are welcome. Please open an issue or pull request on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+
+MIT License. See [LICENSE](./LICENSE) for details.
